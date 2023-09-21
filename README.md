@@ -86,7 +86,7 @@ Polyp segmentation within colonoscopy video frames using deep learning models ha
 
 ## 3. License
 
-This repository is released under the XXX license as found in the [LICENSE](https://github.com/KerrFitzgerald/FCBSwinV2_Transformer/blob/main/LICENSE) file.
+This repository is released under the MIT License as found in the [LICENSE.txt](https://github.com/KerrFitzgerald/Polyp_FCB-SwinV2Transformer/blob/main/LICENSE) file.
 
 ## 4. Citation
 
