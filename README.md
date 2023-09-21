@@ -51,8 +51,6 @@ Polyp segmentation within colonoscopy video frames using deep learning models ha
 
 + Results produced in this work were generated using an Nvidia RTX 3090 GPU on a Linux operating system (Ubuntu).
 
-+ Requirements (code libraries, versions, etc.) can be found in the requirements.txt file. Ensure these are installed.
-
 + Clone the repository and navigate to new directory.
 
 + Download and extract polyp segmentation datasets (e.g.[Kvasir-SEG](https://datasets.simula.no/downloads/kvasir-seg.zip))
