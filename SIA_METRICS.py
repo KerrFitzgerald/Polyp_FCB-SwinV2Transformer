@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from sklearn.metrics import jaccard_score, f1_score, precision_score, recall_score
 
-"""PyTorch loss functions and scoring metrics for single image averaging"""
+"""PyTorch loss functions and scoring metrics for image-wise averaging"""
 
 
 class DiceLoss(nn.Module):
