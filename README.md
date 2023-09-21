@@ -4,18 +4,19 @@
 
 # FCB-SwinV2 Transformer for Polyp Segmentation
 
-Official code repository for: FCB-SwinV2 Transformer for Polyp Segmentation (INSERT PUBLICATION NAME)
+Official code repository for: Polyp Segmentation with the FCB-SwinV2 Transformer (INSERT PUBLICATION NAME)
 
-Authors: [Kerr Fitzgerald](https://scholar.google.co.uk/citations?user=sapCpr4AAAAJ&hl=en&oi=ao) and [Bogdan J. Matuszewski](https://scholar.google.co.uk/citations?user=QlUO_oAAAAAJ&hl=en)
+Authors: [Kerr Fitzgerald](https://scholar.google.co.uk/citations?user=sapCpr4AAAAJ&hl=en&oi=ao) [Jorge Bernal](https://scholar.google.com/citations?user=GsyL_kUAAAAJ&hl=en) and [Bogdan J. Matuszewski](https://scholar.google.co.uk/citations?user=QlUO_oAAAAAJ&hl=en)
 
 Links to the paper:
-+ [arXiv](https://arxiv.org/abs/2302.01027)
+
+INSERT LINK
 
 ## 1. Overview
 
 ### 1.1 Abstract
 
-Polyp segmentation within colonoscopy video frames using deep learning models has the potential to automate the workflow of clinicians. This could help improve the early detection rate and characterization of polyps which could progress to colorectal cancer. Recent state-of-the-art deep learning polyp segmentation models have combined the outputs of Fully Convolutional Network architectures and Transformer Network architectures which work in parallel. We propose modifications to the current state-of-the-art polyp segmentation model FCBFormer. The transformer architecture of the FCBFormer is replaced with a SwinV2 Transformer-UNET and minor changes to the Fully Convolutional Network architecture are made to create the FCB-SwinV2 Transformer. The performance of the FCB-SwinV2 Transformer is evaluated on the popular colonoscopy segmentation benchmarking datasets Kvasir-SEG and CVC-ClinicDB. Generalizability tests are also conducted. 
+Polyp segmentation within colonoscopy video frames using deep learning models has the potential to automate the workflow of clinicians. This could help improve the early lesion detection rate and in vivo characterization of those polyps which could develop into colorectal cancer. Recent state-of-the-art deep learning polyp segmentation models have combined the outputs of Fully Convolutional Network architectures and Transformer Network architectures which work in parallel. In this paper we propose modifications to the previous state-of-the-art polyp segmentation model FCN-Transformer. The transformer architecture of the FCN-Transformer is replaced with a SwinV2 Transformer-UNET; minor changes to the Fully Convolutional Network architecture are made to create the FCB-SwinV2 Transformer. The performance of the FCB-SwinV2 Transformer is evaluated on the popular colonoscopy segmentation benchmarking datasets Kvasir-SEG, CVC-ClinicDB and ETIS-LaribPolypDB. Generalizability tests are also conducted to determine if models can maintain accuracy when evaluated on unseen data distributions. The FCB-SwinV2 Transformer consistently achieves higher mean Dice and mean IoU scores across all tests conducted and therefore represents new state-of-the-art performance. The importance of understanding subtleties in evaluation metrics and dataset partitioning are also demonstrated and discussed.
 
 ### 1.2 Architecture
 
@@ -52,28 +53,19 @@ Polyp segmentation within colonoscopy video frames using deep learning models ha
 
 + Requirements (code libraries, versions, etc.) can be found in the requirements.txt file. Ensure these are installed.
 
-+ Clone the repository and navigate to new directory:
++ Clone the repository and navigate to new directory.
 
-```
-git clone https://github.com/KerrFitzgerald/FCBSwinV2_Transformer
-cd ./FCBSwinV2_Transformer
-```
++ Download and extract polyp segmentation datasets (e.g.[Kvasir-SEG](https://datasets.simula.no/downloads/kvasir-seg.zip))
 
-+ Download and extract the [Kvasir-SEG](https://datasets.simula.no/downloads/kvasir-seg.zip) and the [CVC-ClinicDB](https://www.dropbox.com/s/p5qe9eotetjnbmq/CVC-ClinicDB.rar?dl=0) datasets.
++ Resize the images and masks so they are of size 384x384.
+  
++ If wanting to compare against exact data splits used in this study download the csv files contained in the 'split_information' folder withion this repository.
 
 + Download the [SwinV2](https://github.com/SwinTransformer/storage/releases/download/v2.0.0/swinv2_large_patch4_window12to24_192to384_22kto1k_ft.pth) ImageNet pre-trained weights.
 
-+ Create folders named "Kvasir_Results/" and "CVC-ClinicDB_Results/" to store model weights and performance metrics for training, validation and testing (.csv files).
++ Create folders for saving results (change save_string parameter), define paths to image/mask folders, define paths to .csv split files and create/define folder path for saving mask predictions.
 
-### 2.2 Training and Evaluation
-
-+ To train and evaluate the model on the Kvasir-SEG data (for the fixed data partition specified in the paper) run all cells within the [Kvasir-SEG FDP Notebook](https://github.com/KerrFitzgerald/FCBSwinV2_Transformer/blob/main/Kvasir_FCBSwinV2_Transformer_FDP.ipynb)
-
-+ To train and evaluate the model on the CVC-ClinicDB data (for the random data partition used in the paper) run all cells within the [CVC-Clinic RP Notebook](https://github.com/KerrFitzgerald/FCBSwinV2_Transformer/blob/main/CVCClinicDB_FCBSwinV2_Transformer_RDP.ipynb)
-
-+ Generalizability tests can be conducted by running the [Trained on Kvasir-SEG FDP and Evaluated on CVC-ClinicDB](https://github.com/KerrFitzgerald/FCBSwinV2_Transformer/blob/main/Kvasir_FDP_Train_CVCClinicDB_Test_EVALUATION.ipynb) and [Trained on CVC-ClinicDB RDP and Evaluated on Kvasir-SEG](https://github.com/KerrFitzgerald/FCBSwinV2_Transformer/blob/main/CVCClinicDB_RDP_Train_Kvasir_Test_EVALUATION.ipynb) notebooks.
-
-### 2.3 Examples of Produced Segmentation Maps
+### 2.2 Examples of Produced Segmentation Maps
 
 </p>
 
@@ -116,6 +108,8 @@ If you use this work, please consider citing us:
 This work makes use of data from the Kvasir-SEG dataset, available at https://datasets.simula.no/kvasir-seg/.
 
 This work makes use of data from the CVC-ClinicDB dataset, available at https://polyp.grand-challenge.org/CVCClinicDB/.
+
+This work makes use of data from the ETIS-LaribDB dataset, available at https://polyp.grand-challenge.org/ETISLarib/. 
 
 Results are obtained using ImageNet pre-trained weights for the SwinV2 Encoder system, available at [SwinV2 Encoder Weights](https://github.com/SwinTransformer/storage/releases/download/v2.0.0/swinv2_large_patch4_window12to24_192to384_22kto1k_ft.pth)
 
