@@ -1,6 +1,5 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/fcb-swinv2-transformer-for-polyp-segmentation/medical-image-segmentation-on-kvasir-seg)](https://paperswithcode.com/sota/medical-image-segmentation-on-kvasir-seg?p=fcb-swinv2-transformer-for-polyp-segmentation)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/fcb-swinv2-transformer-for-polyp-segmentation/medical-image-segmentation-on-cvc-clinicdb)](https://paperswithcode.com/sota/medical-image-segmentation-on-cvc-clinicdb?p=fcb-swinv2-transformer-for-polyp-segmentation)
+
 
 # FCB-SwinV2 Transformer for Polyp Segmentation
 
