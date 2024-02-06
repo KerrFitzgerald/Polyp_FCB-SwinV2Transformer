@@ -68,18 +68,12 @@ Polyp segmentation within colonoscopy video frames using deep learning models ha
 </p>
 
 <p align="center">
-	<img width=500, src="images/Kvasir_Results.png"> <br />
+	<img width=500, src="images/Figure13_QualResults_DuckSplit.png"> <br />
 	<em>
-		Figure 2: Visual comparisons of predictions made by the FCB-SwinV2 Transformer for the Kvasir-SEG dataset when trained using the fixed data partition and when trained using the CVC-ClinicDB dataset. The generalizability of the model  is good  for regular polyps but suffers a large performance drop for certain large, irregular polyps.
+		Figure 4: Predictions made by the FCB-SwinV2 Transformer for images from the test set of the Kvasir-SEG dataset when trained and evaluated using the DUCK-Net data partitions. DUCKNET-34 and FCN-Transformer predicted segmentation maps are included for comparison.  
 	</em>
 </p>
 
-<p align="center">
-	<img width=500, src="images/CVC_Results.png"> <br />
-	<em>
-		Figure 3: Visual comparisons of predictions made by the FCB-SwinV2 Transformer for the CVC-ClinicDB dataset when trained using the random data partition, when trained using the data partition which ensured no data leakage and when trained using the Kvasir-SEG dataset. When using a random data partition, the model has been trained and evaluat-ed on images of the same polyp from a video sequence resulting in artificially high performance. 
-	</em>
-</p>
 
 
 ## 3. License
