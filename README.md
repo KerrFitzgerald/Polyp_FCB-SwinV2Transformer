@@ -22,7 +22,7 @@ Polyp segmentation within colonoscopy video frames using deep learning models ha
 
 </p>
 <p align="center">
-	<img width=500, src="images/Figure1.png"> <br />
+	<img width=500, src="images/Figure2.png"> <br />
 	<em>
 		Figure 1:(a) Overall FCB-SwinV2 Transformer architecture consisting of a Transfromer Branch (TB) and Fully Convolutional Branch (FCB) which work in parallel.
 	</em>
