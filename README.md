@@ -38,7 +38,7 @@ Polyp segmentation within colonoscopy video frames using deep learning models ha
 
 </p>
 <p align="center">
-	<img width=500, src="images/Figure3_SCSEk.png"> <br />
+	<img width=500, src="images/Figure3_SCSE.png"> <br />
 	<em>
 		Figure 3: (a) The decoder block [35] uses channel wise concatenation to combine previous decoder layer output with encoder skip connection output. (b) The structure of the SCSE module which combines the output of the SSCE and CSSE modules
 	</em>
