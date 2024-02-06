@@ -6,7 +6,7 @@
 
 Official code repository for: Polyp Segmentation with the FCB-SwinV2 Transformer (INSERT PUBLICATION NAME)
 
-Authors: [Kerr Fitzgerald](https://scholar.google.co.uk/citations?user=sapCpr4AAAAJ&hl=en&oi=ao), [Jorge Bernal](https://scholar.google.com/citations?user=GsyL_kUAAAAJ&hl=en) and [Bogdan J. Matuszewski](https://scholar.google.co.uk/citations?user=QlUO_oAAAAAJ&hl=en)
+Authors: [Kerr Fitzgerald](https://scholar.google.co.uk/citations?user=sapCpr4AAAAJ&hl=en&oi=ao), [Jorge Bernal](https://scholar.google.com/citations?user=GsyL_kUAAAAJ&hl=en), [Aymeric Histace](https://scholar.google.fr/citations?user=y0MU8CAAAAAJ&hl=fr) and [Bogdan J. Matuszewski](https://scholar.google.co.uk/citations?user=QlUO_oAAAAAJ&hl=en)
 
 Links to the paper:
 
