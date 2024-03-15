@@ -9,7 +9,7 @@ Authors: [Kerr Fitzgerald](https://scholar.google.co.uk/citations?user=sapCpr4AA
 
 Links to the paper:
 
-INSERT LINK
+[INSERT LINK](https://ieeexplore.ieee.org/document/10466532)
 
 ## 1. Overview
 
