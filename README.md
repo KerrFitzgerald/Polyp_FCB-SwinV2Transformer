@@ -3,13 +3,13 @@
 
 # FCB-SwinV2 Transformer for Polyp Segmentation
 
-Official code repository for: Polyp Segmentation with the FCB-SwinV2 Transformer (INSERT PUBLICATION NAME)
+Official code repository for: Polyp Segmentation with the FCB-SwinV2 Transformer
 
 Authors: [Kerr Fitzgerald](https://scholar.google.co.uk/citations?user=sapCpr4AAAAJ&hl=en&oi=ao), [Jorge Bernal](https://scholar.google.com/citations?user=GsyL_kUAAAAJ&hl=en), [Aymeric Histace](https://scholar.google.fr/citations?user=y0MU8CAAAAAJ&hl=fr) and [Bogdan J. Matuszewski](https://scholar.google.co.uk/citations?user=QlUO_oAAAAAJ&hl=en)
 
 Links to the paper:
 
-[INSERT LINK](https://ieeexplore.ieee.org/document/10466532)
+[Polyp Segmentation with the FCB-SwinV2 Transformer IEEE ACCESS](https://ieeexplore.ieee.org/document/10466532)
 
 ## 1. Overview
 
@@ -81,18 +81,10 @@ This repository is released under the MIT License as found in the [LICENSE.txt](
 
 ## 4. Citation
 
-If you use this work, please consider citing us:
+If you use this work please cite:
 
-```bibtex
-@inproceedings{,
-  title={},
-  author={Fitzgerald, Kerr and Matuszewski, Bogdan J},
-  journal={},
-  pages={},
-  year={},
-  organization={}
-}
-```
+K. Fitzgerald, J. Bernal, A. Histace and B. J. Matuszewski, "Polyp Segmentation with the FCB-SwinV2 Transformer," in IEEE Access, doi: 10.1109/ACCESS.2024.3376228.
+
 
 ## 5. Acknowledgements
 
